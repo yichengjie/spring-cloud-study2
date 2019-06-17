@@ -19,14 +19,14 @@
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-dependencies</artifactId>
-				<version>Finchley.SR4</version>
+				<version>Dalston.SR5</version>
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
 			<dependency>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-starter-parent</artifactId>
-				<version>2.0.9.RELEASE</version>
+				<version>1.5.19.RELEASE</version>
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
@@ -93,5 +93,7 @@
 
 	<modules>
 		<module>eureka-server</module>
+		<module>eureka-client</module>
+		<module>eureka-consumer</module>
 	</modules>
 </project>
