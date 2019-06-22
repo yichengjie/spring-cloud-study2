@@ -1,12 +1,23 @@
 spring:
   application:
     name: eureka-client
- 
-server:
+    
+server: 
   port: 2001
-     
-eureka:
+  
+eureka: 
   client:
-    service-url:
+    service-url: 
       defaultZone: http://localhost:1001/eureka/
+#  instance:
+#    ip-address: true
+
+logging:
+  level:
+    root: info
+
+#management.security.enabled=false
+#management:
+#  security: 
+#    enabled: false
       
