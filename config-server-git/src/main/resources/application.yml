@@ -3,14 +3,14 @@ server:
   
 spring:
   application:
-    name: config-server-git
+    name: config-server2
   cloud:
     config:
       server:
         git:
           uri: https://github.com/yichengjie/config-center
           username: 626659321@qq.com
-          password: y123456
+          password: xxxxxx
     
 eureka: 
   client:

@@ -10,13 +10,13 @@ import org.springframework.web.bind.annotation.RestController;
 public class DcController {
 	@Autowired
     private DiscoveryClient discoveryClient;
-	@Value("info")
-	private String info ;
+	@Value("${test}")
+	private String test ;
 
     @GetMapping("/dc")
     public String dc() {
         String services = "Services: " + discoveryClient.getServices();
-        System.out.println(services + "["+info+"]");
-        return services + "["+info+"]";
+        System.out.println(services+ " ["+test+"]");
+        return services + " ["+test+"]";
     }
 }
