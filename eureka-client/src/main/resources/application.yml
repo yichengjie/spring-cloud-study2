@@ -9,15 +9,21 @@ eureka:
   client:
     service-url: 
       defaultZone: http://localhost:1001/eureka/
-#  instance:
-#    ip-address: true
+  instance:
+    prefer-ip-address: true
 
 logging:
   level:
     root: info
-
-#management.security.enabled=false
-#management:
-#  security: 
-#    enabled: false
-      
+    
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+        - refresh
+        - health
+        - info
+  info:
+    git:
+      enabled: true

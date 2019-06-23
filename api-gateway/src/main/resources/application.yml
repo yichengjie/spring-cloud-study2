@@ -11,20 +11,14 @@ eureka:
   client:
     service-url: 
       defaultZone: http://localhost:1001/eureka/
-#  instance:
-#    ip-address: true  
+  instance:
+   prefer-ip-address: true
    
 zuul:
   routes:
     eureka-client: 
       path: /eureka-client/**
       service-id: eureka-client
-  
-#zuul:
-#  routes:
-#    eureka-client: 
-#      path: /eureka-client/**
-#      service-id: eureka-client
    
       
       
