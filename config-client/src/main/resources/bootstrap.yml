@@ -15,5 +15,6 @@ spring:
       discovery:
         enabled: true
         service-id: config-server-git
+      fail-fast: true  #启动失败时能够快速响应
 #      uri:  #uri可以不需要
 #      - http://localhost:4001/
