@@ -1,0 +1,10 @@
+spring:
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: config-server-git
+      label: master
+      profile: dev
+      uri:
+      - http://localhost:4001/

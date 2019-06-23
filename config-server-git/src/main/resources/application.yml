@@ -1,0 +1,28 @@
+server:
+  port: 4001
+  
+spring:
+  application:
+    name: config-server-git
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/yichengjie/config-center
+          username: 626659321@qq.com
+          password: y123456
+    
+eureka: 
+  client:
+    service-url: 
+      defaultZone: http://localhost:1001/eureka/
+      
+management:
+  endpoints:
+    web:
+      exposure:
+        include: 
+        - refresh
+        - health
+        - info
+      
