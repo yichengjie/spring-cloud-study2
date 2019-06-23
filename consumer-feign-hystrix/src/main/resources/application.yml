@@ -9,3 +9,7 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:1001/eureka/
+ 
+feign:
+  hystrix:
+    enabled: true #老版本Spring Cloud的话，feign中的hystrix是默认关闭的。

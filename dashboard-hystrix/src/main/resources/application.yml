@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: dashboard-hystrix
+    
+server:
+  port: 2005
+        
+logging:
+  level:
+    root: info

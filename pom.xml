@@ -128,5 +128,6 @@
 		<module>config-client</module>
 		<module>consumer-feign</module>
 		<module>consumer-feign-hystrix</module>
+		<module>dashboard-hystrix</module>
 	</modules>
 </project>
