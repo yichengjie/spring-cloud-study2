@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: config-client
+    
+server:
+  port: 4002
+        
+logging:
+  level:
+    root: info
+    
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+        - refresh
+        - health
+        - info

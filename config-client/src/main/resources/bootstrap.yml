@@ -1,6 +1,13 @@
+# 注意这里eureka.client.service-url.defaultZone必须与
+# spring.cloud.config同时放在bootstrap.yml里面，否则报错提示找不到config-server-git
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1001/eureka/
+  instance:
+    prefer-ip-address: true 
+
 spring:
-  application:
-    name: config-client
   cloud:
     config:
       label: master
@@ -8,25 +15,5 @@ spring:
       discovery:
         enabled: true
         service-id: config-server-git
-server:
-  port: 4002
 
-eureka:
-  client:
-    service-url:
-      defaultZone: http://localhost:1001/eureka/
-  instance:
-    prefer-ip-address: true
-  
-management:
-  endpoints:
-    web:
-      exposure:
-        include:
-        - refresh
-        - health
-        - info
         
-logging:
-  level:
-    root: info
