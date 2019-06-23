@@ -10,7 +10,7 @@ spring:
         git:
           uri: https://github.com/yichengjie/config-center
           username: 626659321@qq.com
-          password: y123456
+          password: xxxxx
     
 eureka: 
   client:
