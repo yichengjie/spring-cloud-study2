@@ -5,7 +5,7 @@ eureka:
     service-url:
       defaultZone: http://localhost:1001/eureka/
   instance:
-    prefer-ip-address: true 
+    prefer-ip-address: true  
 
 spring:
   cloud:
@@ -15,5 +15,5 @@ spring:
       discovery:
         enabled: true
         service-id: config-server-git
-
-        
+#      uri:  #uri可以不需要
+#      - http://localhost:4001/
