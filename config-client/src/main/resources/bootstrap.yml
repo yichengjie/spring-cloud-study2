@@ -1,0 +1,32 @@
+spring:
+  application:
+    name: config-client
+  cloud:
+    config:
+      label: master
+      profile: dev
+      discovery:
+        enabled: true
+        service-id: config-server-git
+server:
+  port: 4002
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1001/eureka/
+  instance:
+    prefer-ip-address: true
+  
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+        - refresh
+        - health
+        - info
+        
+logging:
+  level:
+    root: info

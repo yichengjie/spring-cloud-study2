@@ -125,5 +125,6 @@
 		<module>stream-hello</module>
 		<module>gateway-zuul</module>
 		<module>config-server-git</module>
+		<module>config-client</module>
 	</modules>
 </project>
