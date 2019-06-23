@@ -7,10 +7,10 @@ import org.springframework.web.client.RestTemplate;
 
 
 @SpringBootApplication
-public class EurekaConsumerApplication {
+public class ConsumerRibbonApplication {
 	
 	public static void main(String[] args) {
-		SpringApplication.run(EurekaConsumerApplication.class, args) ;
+		SpringApplication.run(ConsumerRibbonApplication.class, args) ;
 	}
 	@Bean
 	public RestTemplate restTemplate() {

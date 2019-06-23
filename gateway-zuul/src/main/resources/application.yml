@@ -14,10 +14,10 @@ eureka:
    
 zuul:
   routes:
-    eureka-client: 
-      path: /eureka-client/**
-      service-id: eureka-client
-    eureka-consumer: 
-      path: /eureka-consumer/**
-      service-id: eureka-consumer
+    client-eureka: 
+      path: /client-eureka/**
+      service-id: client-eureka
+    consumer-eureka: 
+      path: /consumer-eureka/**
+      service-id: consumer-eureka
        
