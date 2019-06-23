@@ -2,10 +2,8 @@ spring:
   application:
     name: api-gateway
     
-    
 server:
   port: 3001
-  
   
 eureka: 
   client:
@@ -19,8 +17,7 @@ zuul:
     eureka-client: 
       path: /eureka-client/**
       service-id: eureka-client
-   
-      
-      
-  
-  
+    eureka-consumer: 
+      path: /eureka-consumer/**
+      service-id: eureka-consumer
+       
