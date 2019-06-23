@@ -127,5 +127,6 @@
 		<module>config-server-git</module>
 		<module>config-client</module>
 		<module>consumer-feign</module>
+		<module>consumer-feign-hystrix</module>
 	</modules>
 </project>
