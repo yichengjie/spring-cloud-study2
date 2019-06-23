@@ -7,7 +7,7 @@
 		<artifactId>spring-cloud-study2</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<artifactId>api-gateway</artifactId>
+	<artifactId>gateway-zuul</artifactId>
 
 	<dependencies>
 		<dependency>
