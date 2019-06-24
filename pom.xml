@@ -122,12 +122,12 @@
 		<module>server-eureka</module>
 		<module>client-eureka</module>
 		<module>consumer-ribbon</module>
-		<module>stream-hello</module>
 		<module>gateway-zuul</module>
 		<module>config-server-git</module>
 		<module>config-client</module>
 		<module>consumer-feign</module>
 		<module>consumer-feign-hystrix</module>
 		<module>dashboard-hystrix</module>
+		<module>stream-rabbit</module>
 	</modules>
 </project>
