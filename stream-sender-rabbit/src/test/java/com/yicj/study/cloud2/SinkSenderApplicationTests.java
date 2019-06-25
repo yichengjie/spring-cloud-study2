@@ -5,15 +5,14 @@ import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.cloud.stream.annotation.EnableBinding;
-import org.springframework.cloud.stream.annotation.Output;
-import org.springframework.messaging.MessageChannel;
 import org.springframework.messaging.support.MessageBuilder;
 import org.springframework.test.context.junit4.SpringRunner;
+import com.yicj.study.cloud2.service.SinkSender;
 
 
+@EnableBinding(SinkSender.class)
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes=SinkSenderApplication.class)
-@EnableBinding(value = {SinkSenderApplicationTests.SinkSender.class})
 public class SinkSenderApplicationTests {
 	@Autowired
 	private SinkSender sinkSender;
@@ -26,9 +25,5 @@ public class SinkSenderApplicationTests {
 			.build());
 	}
 
-	public interface SinkSender {
-		String OUTPUT = "input";
-		@Output(SinkSender.OUTPUT)
-		MessageChannel output();
-	}
+	
 }
