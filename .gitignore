@@ -2,3 +2,4 @@
 .project
 .settings/
 target/
+trace-1/build/trace-1.json
