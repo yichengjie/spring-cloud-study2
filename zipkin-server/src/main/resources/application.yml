@@ -9,4 +9,4 @@ management:
   metrics:
     web: 
       server:
-        auto-time-requests: false 
+        auto-time-requests: false  #启动访问报错加入这个
