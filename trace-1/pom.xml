@@ -29,5 +29,13 @@
 		    <artifactId>spring-cloud-starter-sleuth</artifactId>
 		</dependency>
 		<!-- 服务跟踪 end -->
+		
+		<!-- 对接elk start-->
+		<dependency>
+		    <groupId>net.logstash.logback</groupId>
+		    <artifactId>logstash-logback-encoder</artifactId>
+		    <version>5.3</version>
+		</dependency>
+		<!-- 对接elk end-->
 	</dependencies>
 </project>
