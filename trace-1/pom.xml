@@ -22,5 +22,12 @@
 		    <groupId>org.springframework.cloud</groupId>
 		    <artifactId>spring-cloud-starter-netflix-ribbon</artifactId>
 		</dependency>
+		
+		<!-- 服务跟踪 start -->
+		<dependency>
+		    <groupId>org.springframework.cloud</groupId>
+		    <artifactId>spring-cloud-starter-sleuth</artifactId>
+		</dependency>
+		<!-- 服务跟踪 end -->
 	</dependencies>
 </project>
