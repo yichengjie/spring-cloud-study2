@@ -156,6 +156,7 @@
 		<module>consumer-feign</module>
 		<module>consumer-feign-hystrix</module>
 		<module>dashboard-hystrix</module>
-		<module>stream-rabbitmq</module>
+		<module>stream-receiver-rabbit</module>
+		<module>stream-sender-rabbit</module>
 	</modules>
 </project>

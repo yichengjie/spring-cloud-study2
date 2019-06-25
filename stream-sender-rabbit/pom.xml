@@ -2,7 +2,7 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<artifactId>stream-rabbitmq</artifactId>
+	<artifactId>stream-sender-rabbit</artifactId>
 	
 	<parent>
 		<groupId>com.yicj.study.cloud2</groupId>
@@ -44,6 +44,12 @@
 		    <artifactId>spring-boot-starter-test</artifactId>
 		    <scope>test</scope>
 		</dependency>
+		<dependency>
+		    <groupId>net.bytebuddy</groupId>
+		    <artifactId>byte-buddy</artifactId>
+		    <scope>test</scope>
+		</dependency>
+		
 	</dependencies>
 
 	<build>

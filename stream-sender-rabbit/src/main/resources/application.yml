@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: stream-rabbitmq
+  rabbitmq:   # 这里需要配置，rabbitmq信息，不然会报错
+    host: localhost
+    port: 5672
+    username: spring
+    password: 123456
