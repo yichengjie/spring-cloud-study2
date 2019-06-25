@@ -37,5 +37,10 @@
 		    <version>5.3</version>
 		</dependency>
 		<!-- 对接elk end-->
+		
+		<dependency>
+		    <groupId>org.springframework.cloud</groupId>
+		    <artifactId>spring-cloud-sleuth-zipkin</artifactId>
+		</dependency>
 	</dependencies>
 </project>
