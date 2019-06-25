@@ -7,6 +7,8 @@
   5.1 consumer-eureka : 2002
   5.2 consumer-feign : 2003
   5.3 consumer-feign-hystrix: 2004
+  5.4 trace-1 : 2005
+  5.5 trace-1 : 2006
   
   
   

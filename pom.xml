@@ -158,5 +158,7 @@
 		<module>dashboard-hystrix</module>
 		<module>stream-receiver-rabbit</module>
 		<module>stream-sender-rabbit</module>
+		<module>trace-1</module>
+		<module>trace-2</module>
 	</modules>
 </project>
