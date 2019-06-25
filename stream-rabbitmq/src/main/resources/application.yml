@@ -1,10 +1,3 @@
 spring:
   application:
-    name: stream-consumer-self
-  cloud:
-    stream:
-      bindings:
-        example-topic-input: 
-          destination: aaa-topic
-        example-topic-output:
-          destination: aaa-topic
+    name: stream-rabbitmq
