@@ -5,7 +5,7 @@
     <artifactId>spring-cloud-study2</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
-  <artifactId>trace-1</artifactId>
+  <artifactId>trace-4</artifactId>
   
   <dependencies>
 		<dependency>
@@ -18,11 +18,6 @@
 			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
 		</dependency>
 		
-		<dependency>
-		    <groupId>org.springframework.cloud</groupId>
-		    <artifactId>spring-cloud-starter-netflix-ribbon</artifactId>
-		</dependency>
-		
 		<!-- 服务跟踪 start -->
 		<dependency>
 		    <groupId>org.springframework.cloud</groupId>
@@ -30,18 +25,10 @@
 		</dependency>
 		<!-- 服务跟踪 end -->
 		
-		<!-- 对接elk start-->
-		<dependency>
-		    <groupId>net.logstash.logback</groupId>
-		    <artifactId>logstash-logback-encoder</artifactId>
-		    <version>5.3</version>
-		</dependency>
-		<!-- 对接elk end-->
-		<!-- 对接zipkin-server start -->
+		
 		<dependency>
 		    <groupId>org.springframework.cloud</groupId>
 		    <artifactId>spring-cloud-sleuth-zipkin</artifactId>
 		</dependency>
-		<!-- 对接zipkin-server end -->
 	</dependencies>
 </project>

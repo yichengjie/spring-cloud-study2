@@ -5,7 +5,7 @@
     <artifactId>spring-cloud-study2</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
-  <artifactId>trace-1</artifactId>
+  <artifactId>trace-3</artifactId>
   
   <dependencies>
 		<dependency>
