@@ -161,5 +161,7 @@
 		<module>trace-1</module>
 		<module>trace-2</module>
 		<module>zipkin-server</module>
+		<module>trace-3</module>
+		<module>trace-4</module>
 	</modules>
 </project>
