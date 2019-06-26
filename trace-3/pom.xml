@@ -37,11 +37,18 @@
 		    <version>5.3</version>
 		</dependency>
 		<!-- 对接elk end-->
-		<!-- 对接zipkin-server start -->
+		
+		<!-- spring-cloud-sleuth-stream已弃用 ,如果你想通过RabbitMQ上的Sleuth，
+			添加spring-cloud-starter-zipkin和spring-rabbit依赖项。-->
 		<dependency>
-		    <groupId>org.springframework.cloud</groupId>
-		    <artifactId>spring-cloud-sleuth-zipkin</artifactId>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-zipkin</artifactId>
 		</dependency>
-		<!-- 对接zipkin-server end -->
+		
+		<dependency>
+			<groupId>org.springframework.amqp</groupId>
+			<artifactId>spring-rabbit</artifactId>
+		</dependency>
+		
 	</dependencies>
 </project>

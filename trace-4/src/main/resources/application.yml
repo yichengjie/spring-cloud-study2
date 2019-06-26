@@ -1,11 +1,21 @@
 spring:
   application:
     name: trace-4
-  zipkin:
-    base-url: http://localhost:9411   #配置zipkin-server的地址
   sleuth:
     sampler:
       rate: 1    # 则每次的信息都进入了zipkin
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: spring
+    password: 123456
+  zipkin:
+    sender:
+      type: rabbit
+      
+zipkin:
+  rabbitmq:
+    queue: hello
 
 server:
   port: 2008
@@ -18,4 +28,6 @@ eureka:
 logging:
   level:
     org.springframework.web.servlet.DispatcherServlet: DEBUG
-    
+   
+   
+   

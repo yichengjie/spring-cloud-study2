@@ -14,9 +14,9 @@ public class Trace3Controller {
 	@Autowired
 	private RestTemplate restTemplate ;
 	
-	@GetMapping("/trace-1")
+	@GetMapping("/trace-3")
     public String trace() {
-    	log.info("===call trace-1===");
-    	return restTemplate.getForEntity("http://trace-2/trace-2", String.class).getBody();
+    	log.info("===call trace-3===");
+    	return restTemplate.getForEntity("http://trace-4/trace-4", String.class).getBody();
     }
 }

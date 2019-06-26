@@ -11,9 +11,9 @@ import lombok.extern.slf4j.Slf4j;
 @RestController
 public class Trace4Controller {
 	
-	@GetMapping("/trace-2")
+	@GetMapping("/trace-4")
     public String trace(HttpServletRequest request) {
-		log.info("===<call trace-2, TraceId={}, SpanId={}>===",
+		log.info("===<call trace-4, TraceId={}, SpanId={}>===",
 				request.getHeader("X-B3-TraceId"), request.getHeader("X-B3-SpanId"));
     	return "Trace";
     }

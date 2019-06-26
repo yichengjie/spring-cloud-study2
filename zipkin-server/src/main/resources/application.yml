@@ -10,3 +10,16 @@ management:
     web: 
       server:
         auto-time-requests: false  #启动访问报错加入这个
+
+
+# ZipkinRabbitMQCollectorAutoConfiguration
+zipkin:   # rabbitmq记录消息使用的
+  collector:
+    rabbitmq:
+      addresses: 
+      - localhost:5672
+      password: spring
+      username: 123456
+      queue: hello 
+
+   
