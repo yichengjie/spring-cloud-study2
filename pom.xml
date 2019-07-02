@@ -163,5 +163,6 @@
 		<module>zipkin-server</module>
 		<module>trace-3</module>
 		<module>trace-4</module>
+		<module>gateway-spring</module>
 	</modules>
 </project>
